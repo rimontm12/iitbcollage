@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IITB | Institute of Information Technology Bogra</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo-area">
+
+        <img
+            src="images/logo.jpg"
+            class="site-logo"
+            alt="IITB Logo"
+        >
+
+        <div class="brand-text">
+            <h1>IITB</h1>
+
+            <p>
+                Institute of Information Technology Bogra
+            </p>
+        </div>
+
+    </div>
+
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#notice">Notice</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            INSTITUTE OF INFORMATION TECHNOLOGY BOGRA
+        </span>
+
+        <h2>
+            Education • Technology • Innovation
+        </h2>
+
+        <p>
+            Empowering students through quality education,
+            technology and innovation.
+        </p>
+
+
+        <div class="hero-images">
+
+            <img
+                src="images/collage.jpg"
+                alt="IITB Campus"
+            >
+
+            <img
+                src="images/campus.jpg"
+                alt="IITB Campus"
+            >
+
+            <img
+                src="images/students.jpg"
+                alt="IITB Students"
+            >
+
+        </div>
+
+
+        <a
+            href="#about"
+            class="main-btn"
+        >
+            Explore IITB
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DEPARTMENTS ================= -->
+
+<section
+    id="departments"
+    class="section departments-section"
+>
+
+    <div class="section-title">
+
+        <span>ACADEMIC</span>
+
+        <h2>Our Departments</h2>
+
+        <p>
+            Click any department to view details.
+        </p>
+
+    </div>
+
+
+    <div class="department-grid">
+
+
+        <!-- GARMENTS -->
+
+        <div class="department-card">
+
+            <div class="icon">👗</div>
+
+            <h3>
+                Garments Design and Pattern Making
+            </h3>
+
+            <p>
+                Garments Design and Pattern Making
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- TEXTILE -->
+
+        <div class="department-card">
+
+            <div class="icon">🧵</div>
+
+            <h3>Textile</h3>
+
+            <p>
+                Textile Technology
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- ELECTRICAL -->
+
+        <div class="department-card">
+
+            <div class="icon">⚡</div>
+
+            <h3>Electrical</h3>
+
+            <p>
+                Electrical Technology
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- ELECTRONICS -->
+
+        <div class="department-card">
+
+            <div class="icon">🔌</div>
+
+            <h3>Electronics</h3>
+
+            <p>
+                Electronics Technology
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- COMPUTER -->
+
+        <div
+            class="department-card"
+            onclick="openComputerModal()"
+        >
+
+            <div class="icon">💻</div>
+
+            <h3>Computer</h3>
+
+            <p>
+                Computer Technology
+            </p>
+
+            <button
+                onclick="openComputerModal(event)"
+            >
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- TELECOMMUNICATION -->
+
+        <div class="department-card">
+
+            <div class="icon">📡</div>
+
+            <h3>
+                Telecommunication
+            </h3>
+
+            <p>
+                Telecommunication Technology
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- MECHANICAL -->
+
+        <div class="department-card">
+
+            <div class="icon">⚙️</div>
+
+            <h3>Mechanical</h3>
+
+            <p>
+                Mechanical Technology
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- CIVIL -->
+
+        <div class="department-card">
+
+            <div class="icon">🏗️</div>
+
+            <h3>Civil</h3>
+
+            <p>
+                Civil Technology
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- ARCHITECTURE -->
+
+        <div class="department-card">
+
+            <div class="icon">🏛️</div>
+
+            <h3>Architecture</h3>
+
+            <p>
+                Architecture Technology
+            </p>
+
+            <button onclick="comingSoon()">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= COMPUTER POPUP ================= -->
+
+<div
+    id="computerModal"
+    class="modal"
+    onclick="closeComputerOutside(event)"
+>
+
+    <div
+        class="modal-box"
+        onclick="event.stopPropagation()"
+    >
+
+        <button
+            class="modal-close"
+            onclick="closeComputerModal()"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-icon">
+            💻
+        </div>
+
+
+        <span class="modal-label">
+            DEPARTMENT
+        </span>
+
+
+        <h2>
+            Computer Technology
+        </h2>
+
+
+        <p class="modal-description">
+            Department of Computer Technology
+        </p>
+
+
+        <div class="modal-stats">
+
+            <div class="modal-stat">
+
+                <div>👨‍🎓</div>
+
+                <strong>43</strong>
+
+                <span>
+                    Total Students
+                </span>
+
+            </div>
+
+
+            <div class="modal-stat">
+
+                <div>👨‍🏫</div>
+
+                <strong>2</strong>
+
+                <span>
+                    Teachers
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="teacher-title">
+            Department Teachers
+        </div>
+
+
+        <div class="teacher-list">
+
+
+            <div class="teacher">
+
+                <div class="teacher-photo">
+                    👨‍🏫
+                </div>
+
+                <div>
+
+                    <h3>
+                        Md Nur Mohammad Rana
+                    </h3>
+
+                    <p>
+                        Teacher
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="teacher">
+
+                <div class="teacher-photo">
+                    👩‍🏫
+                </div>
+
+                <div>
+
+                    <h3>
+                        Mst Akhi Akter
+                    </h3>
+
+                    <p>
+                        Teacher
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= NOTICE ================= -->
+
+<section
+    id="notice"
+    class="section notice-section"
+>
+
+    <div class="section-title">
+
+        <span>NOTICE BOARD</span>
+
+        <h2>Latest Notices</h2>
+
+        <p>
+            Search and filter institute notices.
+        </p>
+
+    </div>
+
+
+    <div class="notice-tools">
+
+        <div class="notice-search">
+
+            <span>🔎</span>
+
+            <input
+                type="text"
+                id="noticeSearch"
+                placeholder="Search notice..."
+            >
+
+        </div>
+
+
+        <div class="notice-filters">
+
+            <button
+                class="filter-btn active"
+                data-category="ALL"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="ADMISSION"
+            >
+                Admission
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="ACADEMIC"
+            >
+                Academic
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="GENERAL"
+            >
+                General
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="notice-list"
+        id="noticeList"
+    ></div>
+
+
+    <div
+        id="noNotice"
+        class="no-notice"
+    >
+
+        <div>📭</div>
+
+        <h3>
+            No notice found
+        </h3>
+
+        <p>
+            Try another search or category.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= NOTICE POPUP ================= -->
+
+<div
+    id="noticeModal"
+    class="modal"
+    onclick="closeNoticeOutside(event)"
+>
+
+    <div
+        class="modal-box notice-modal-box"
+        onclick="event.stopPropagation()"
+    >
+
+        <button
+            class="modal-close"
+            onclick="closeNoticeModal()"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-icon">
+            📢
+        </div>
+
+
+        <span
+            id="noticeCategory"
+            class="modal-label"
+        >
+            NOTICE
+        </span>
+
+
+        <h2 id="noticeTitle">
+            Notice Title
+        </h2>
+
+
+        <div
+            id="noticeDate"
+            class="notice-popup-date"
+        >
+            Date
+        </div>
+
+
+        <div
+            id="noticeText"
+            class="notice-popup-text"
+        >
+            Notice details.
+        </div>
+
+
+        <div class="notice-popup-footer">
+
+            <span>
+                Institute of Information Technology Bogra
+            </span>
+
+            <strong>IITB</strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    id="about"
+    class="section about-section"
+>
+
+    <div class="section-title">
+
+        <span>ABOUT IITB</span>
+
+        <h2>
+            About Our Institute
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+        <div class="about-text">
+
+            <h3>
+                Institute of Information Technology Bogra (IITB)
+            </h3>
+
+
+            <p>
+                <strong>
+                    Institute of Information Technology Bogra (IITB)
+                </strong>
+                is a polytechnic at Sherpur Road,
+                Bogra, Bangladesh, established in 2000.
+            </p>
+
+
+            <p>
+                The institute is recognized by the Board of
+                Technical Education, Dhaka, Bangladesh.
+                The average graduating class from Institute
+                of Information Technology Bogra (IITB) each
+                year has 400 to 600 students.
+            </p>
+
+
+            <p>
+                The institute has a campus with a play-ground
+                for soccer, basketball, cricket, volleyball,
+                badminton and so on. The school basketball
+                court also serves as a multipurpose auditorium.
+            </p>
+
+
+            <h3 class="sub-title">
+                Selection of Students
+            </h3>
+
+
+            <p>
+                Students are generally chosen for every
+                department with written and viva through
+                an admission test. The students who score
+                the highest are admitted in the school.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <h3>
+                Institute Information
+            </h3>
+
+
+            <div>
+                <span>Established</span>
+                <strong>2000</strong>
+            </div>
+
+
+            <div>
+                <span>Location</span>
+                <strong>
+                    Bogra, Bangladesh
+                </strong>
+            </div>
+
+
+            <div>
+                <span>Type</span>
+                <strong>
+                    Polytechnic
+                </strong>
+            </div>
+
+
+            <div>
+                <span>Recognition</span>
+                <strong>
+                    Board of Technical Education
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section
+    id="contact"
+    class="section contact-section"
+>
+
+    <div class="section-title">
+
+        <span>CONTACT</span>
+
+        <h2>
+            Contact IITB
+        </h2>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-card">
+
+            <div>📍</div>
+
+            <h3>
+                Location
+            </h3>
+
+            <p>
+                Sherpur Road, Bogra, Bangladesh
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div>🌐</div>
+
+            <h3>
+                Website
+            </h3>
+
+            <p>
+                IITB Official Website
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div>📘</div>
+
+            <h3>
+                Facebook
+            </h3>
+
+            <a
+                href="https://www.facebook.com/IITB.EDU/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit Facebook Page
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <img
+            src="images/logo.jpg"
+            alt="IITB Logo"
+        >
+
+    </div>
+
+
+    <h3>
+        Institute of Information Technology Bogra
+    </h3>
+
+
+    <p>
+        Education • Technology • Innovation
+    </p>
+
+
+    <small>
+        © 2026 IITB. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+/* ================= COMPUTER MODAL ================= */
+
+function openComputerModal(event) {
+
+    if (event) {
+        event.stopPropagation();
+    }
+
+    document
+        .getElementById("computerModal")
+        .classList.add("show");
+
+    document.body.classList.add("modal-open");
+}
+
+
+function closeComputerModal() {
+
+    document
+        .getElementById("computerModal")
+        .classList.remove("show");
+
+    document.body.classList.remove("modal-open");
+}
+
+
+function closeComputerOutside(event) {
+
+    if (
+        event.target.id === "computerModal"
+    ) {
+        closeComputerModal();
+    }
+
+}
+
+
+
+/* ================= DEFAULT NOTICES ================= */
+
+const defaultNotices = [
+
+    {
+        id: "default-1",
+
+        category: "ADMISSION",
+
+        title: "Admission Notice 2026",
+
+        date: "11 August 2026",
+
+        day: "11",
+
+        month: "AUG",
+
+        text:
+`Institute of Information Technology Bogra (IITB)-এর 2026 শিক্ষাবর্ষের ভর্তি সংক্রান্ত কার্যক্রম শীঘ্রই শুরু হবে।
+
+আগ্রহী শিক্ষার্থীদের ভর্তি সংক্রান্ত সকল তথ্যের জন্য নিয়মিত Notice Board অনুসরণ করার জন্য অনুরোধ করা হলো।
+
+— Institute of Information Technology Bogra (IITB)`
+    },
+
+
+    {
+        id: "default-2",
+
+        category: "ACADEMIC",
+
+        title: "Academic Notice",
+
+        date: "08 August 2026",
+
+        day: "08",
+
+        month: "AUG",
+
+        text:
+`সকল শিক্ষার্থীর অবগতির জন্য জানানো যাচ্ছে যে, নিয়মিত ক্লাস, পরীক্ষা এবং অন্যান্য একাডেমিক কার্যক্রমের সময়সূচি Notice Board-এর মাধ্যমে জানানো হবে।
+
+সকল শিক্ষার্থীকে নিয়মিত ক্লাসে উপস্থিত থাকার জন্য অনুরোধ করা হলো।
+
+— Academic Department, IITB`
+    },
+
+
+    {
+        id: "default-3",
+
+        category: "GENERAL",
+
+        title: "Institute Announcement",
+
+        date: "05 August 2026",
+
+        day: "05",
+
+        month: "AUG",
+
+        text:
+`Institute of Information Technology Bogra (IITB)-এর সকল শিক্ষার্থী, শিক্ষক ও সংশ্লিষ্ট ব্যক্তিদের জানানো যাচ্ছে যে, প্রতিষ্ঠানের গুরুত্বপূর্ণ সকল ঘোষণা Notice Board-এ প্রকাশ করা হবে।
+
+সকলকে নিয়মিত Notice Board দেখার জন্য অনুরোধ করা হলো।
+
+— Institute of Information Technology Bogra (IITB)`
+    }
+
+];
+
+
+
+/* ================= NOTICE STORAGE ================= */
+
+function getAdminNotices() {
+
+    try {
+
+        const saved =
+            localStorage.getItem(
+                "iitbNotices"
+            );
+
+        if (!saved) {
+            return [];
+        }
+
+        const parsed =
+            JSON.parse(saved);
+
+        return Array.isArray(parsed)
+            ? parsed
+            : [];
+
+    } catch (error) {
+
+        return [];
+
+    }
+
+}
+
+
+
+function getWebsiteNotices() {
+
+    return [
+        ...getAdminNotices(),
+        ...defaultNotices
+    ];
+
+}
+
+
+
+/* ================= NOTICE FILTER ================= */
+
+let currentCategory = "ALL";
+
+
+
+function escapeHTML(value) {
+
+    const div =
+        document.createElement("div");
+
+    div.textContent =
+        String(value);
+
+    return div.innerHTML;
+
+}
+
+
+
+function getShortText(text) {
+
+    const clean =
+        String(text)
+        .replace(/\s+/g, " ")
+        .trim();
+
+    if (clean.length > 120) {
+
+        return (
+            escapeHTML(
+                clean.substring(0, 120)
+            ) + "..."
+        );
+
+    }
+
+    return escapeHTML(clean);
+
+}
+
+
+
+/* ================= RENDER NOTICES ================= */
+
+function renderNotices() {
+
+    const list =
+        document.getElementById(
+            "noticeList"
+        );
+
+
+    const search =
+        document
+        .getElementById(
+            "noticeSearch"
+        )
+        .value
+        .toLowerCase()
+        .trim();
+
+
+    list.innerHTML = "";
+
+
+    const filtered =
+        getWebsiteNotices().filter(
+            function(notice) {
+
+                const category =
+                    String(
+                        notice.category || ""
+                    ).toUpperCase();
+
+
+                const title =
+                    String(
+                        notice.title || ""
+                    ).toLowerCase();
+
+
+                const text =
+                    String(
+                        notice.text || ""
+                    ).toLowerCase();
+
+
+                const categoryMatch =
+                    currentCategory === "ALL"
+                    ||
+                    category === currentCategory;
+
+
+                const searchMatch =
+                    title.includes(search)
+                    ||
+                    category
+                        .toLowerCase()
+                        .includes(search)
+                    ||
+                    text.includes(search);
+
+
+                return (
+                    categoryMatch &&
+                    searchMatch
+                );
+
+            }
+        );
+
+
+    const noNotice =
+        document.getElementById(
+            "noNotice"
+        );
+
+
+    if (filtered.length === 0) {
+
+        noNotice.classList.add("show");
+
+        return;
+
+    }
+
+
+    noNotice.classList.remove("show");
+
+
+    filtered.forEach(
+        function(notice) {
+
+            const card =
+                document.createElement(
+                    "div"
+                );
+
+
+            card.className =
+                "notice-card";
+
+
+            card.innerHTML = `
+
+                <div class="date">
+
+                    <strong>
+                        ${escapeHTML(
+                            notice.day || ""
+                        )}
+                    </strong>
+
+                    <span>
+                        ${escapeHTML(
+                            notice.month || ""
+                        )}
+                    </span>
+
+                </div>
+
+
+                <div class="notice-content">
+
+                    <label>
+                        ${escapeHTML(
+                            notice.category || "GENERAL"
+                        )}
+                    </label>
+
+                    <h3>
+                        ${escapeHTML(
+                            notice.title || "Notice"
+                        )}
+                    </h3>
+
+                    <p>
+                        ${getShortText(
+                            notice.text || ""
+                        )}
+                    </p>
+
+                    <button type="button">
+                        Read More →
+                    </button>
+
+                </div>
+
+            `;
+
+
+            card.addEventListener(
+                "click",
+                function() {
+
+                    openNotice(
+                        notice.id
+                    );
+
+                }
+            );
+
+
+            list.appendChild(card);
+
+        }
+    );
+
+}
+
+
+
+/* ================= NOTICE SEARCH ================= */
+
+function filterNotices() {
+
+    renderNotices();
+
+}
+
+
+
+/* ================= CATEGORY ================= */
+
+function setNoticeCategory(category) {
+
+    currentCategory =
+        category;
+
+
+    document
+        .querySelectorAll(
+            ".filter-btn"
+        )
+        .forEach(
+            function(button) {
+
+                button.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+
+    const selected =
+        document.querySelector(
+            `.filter-btn[data-category="${category}"]`
+        );
+
+
+    if (selected) {
+
+        selected.classList.add(
+            "active"
+        );
+
+    }
+
+
+    renderNotices();
+
+}
+
+
+
+/* ================= OPEN NOTICE ================= */
+
+function openNotice(id) {
+
+    const notice =
+        getWebsiteNotices().find(
+            function(item) {
+
+                return (
+                    String(item.id) ===
+                    String(id)
+                );
+
+            }
+        );
+
+
+    if (!notice) {
+        return;
+    }
+
+
+    document
+        .getElementById(
+            "noticeCategory"
+        )
+        .textContent =
+        notice.category || "GENERAL";
+
+
+    document
+        .getElementById(
+            "noticeTitle"
+        )
+        .textContent =
+        notice.title || "Notice";
+
+
+    document
+        .getElementById(
+            "noticeDate"
+        )
+        .textContent =
+        notice.date || "";
+
+
+    document
+        .getElementById(
+            "noticeText"
+        )
+        .textContent =
+        notice.text || "";
+
+
+    document
+        .getElementById(
+            "noticeModal"
+        )
+        .classList.add("show");
+
+
+    document.body.classList.add(
+        "modal-open"
+    );
+
+}
+
+
+
+/* ================= CLOSE NOTICE ================= */
+
+function closeNoticeModal() {
+
+    document
+        .getElementById(
+            "noticeModal"
+        )
+        .classList.remove("show");
+
+
+    document.body.classList.remove(
+        "modal-open"
+    );
+
+}
+
+
+
+function closeNoticeOutside(event) {
+
+    if (
+        event.target.id ===
+        "noticeModal"
+    ) {
+
+        closeNoticeModal();
+
+    }
+
+}
+
+
+
+/* ================= OTHER DEPARTMENTS ================= */
+
+function comingSoon() {
+
+    alert(
+        "Department details will be added soon."
+    );
+
+}
+
+
+
+/* ================= ESC KEY ================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeComputerModal();
+
+            closeNoticeModal();
+
+        }
+
+    }
+);
+
+
+
+/* ================= SEARCH ================= */
+
+document
+    .getElementById(
+        "noticeSearch"
+    )
+    .addEventListener(
+        "input",
+        filterNotices
+    );
+
+
+
+/* ================= FILTER BUTTONS ================= */
+
+document
+    .querySelectorAll(
+        ".filter-btn"
+    )
+    .forEach(
+        function(button) {
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    setNoticeCategory(
+                        button.dataset.category
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+
+/* ================= ADMIN NOTICE UPDATE ================= */
+
+window.addEventListener(
+    "storage",
+    function(event) {
+
+        if (
+            event.key ===
+            "iitbNotices"
+        ) {
+
+            renderNotices();
+
+        }
+
+    }
+);
+
+
+
+/* ================= INITIAL LOAD ================= */
+
+renderNotices();
+
+</script>
+
+</body>
+</html>
